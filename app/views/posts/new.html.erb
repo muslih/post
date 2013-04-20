@@ -1,0 +1,28 @@
+<h1>Tambahkan Postingan Baru</h1>
+
+<%= form_for @post do |f| %>
+<table>
+	<tr>
+		<td><%= f.label :title %></td>
+		<td>:</td>
+		<td>
+			<%= f.text_field :title %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<%= f.label :content %>
+		</td>
+		<td>:</td>
+		<td>
+			<%= f.text_area :content %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<%= f.submit "Tambah" %>
+		</td>
+	</tr>
+</table>
+ 
+<% end %>

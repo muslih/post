@@ -1,0 +1,11 @@
+<h1>Our Blog</h1>
+
+<% @posts.each do |post| %>
+	<h2> <%= link_to post.title, post %> </h2>
+	<p> <%= post.content %></p>
+	<hr/>
+	
+<% end %>
+<p>
+	<%= link_to "Tambah posting baru", new_post_path %>
+</p>
